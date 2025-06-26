@@ -1,0 +1,127 @@
+/* style.css */
+
+/* Reset dasar */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #D3D3D3;
+}
+
+header h1 {
+    font-size: 2.5em; /* Ukuran font lebih besar */
+    margin-bottom: 10px;
+}
+
+nav {
+    padding: 10px;
+    background-color: #D3D3D3; /* Dipertahankan dari header */
+}
+
+nav ul {
+    list-style: none; /* Hilangkan bullet point */
+    display: flex; /* Untuk membuat item navigasi sejajar */
+    justify-content: center; /* Tengahkan item navigasi */
+    gap: 20px; /* Jarak antar item navigasi */
+}
+
+nav a {
+    color: #000000;
+    text-decoration: none;
+    font-size: larger;
+    font-weight: bold; /* Lebih menonjol */
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container-main { /* Menggantikan .row dan .container lama */
+    max-width: 960px; /* Lebar maksimal konten */
+    margin: 20px auto; /* Tengahkan dan beri margin atas/bawah */
+    padding: 0 20px; /* Padding samping */
+    /* Menghapus display: flex; untuk membuat layout satu kolom */
+}
+
+.post-text-box {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 30px; /* Beri jarak ke bagian About Me di bawahnya */
+}
+
+.post-text-box h2 { /* Newest Post */
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.post-text-box h3 { /* The Author */
+    font-size: 1.5em; /* Ukuran yang sesuai untuk sub-sub-judul */
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Bagian About Me */
+.profile-section { /* Menggantikan .profile */
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center; /* Tengahkan konten di dalam About Me */
+    margin-left: 50px; /* Ini yang membuat menjorok ke kanan! */
+    max-width: 300px; /* Batasi lebar About Me agar tidak terlalu lebar */
+}
+
+.profile-section h3 { /* About Me */
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.profile-section img {
+    width: 150px;
+    height: 150px; /* Pastikan tinggi sama dengan lebar untuk bulat sempurna */
+    border-radius: 50%; /* Membuat gambar bulat */
+    display: block; /* Agar margin auto bisa berfungsi jika ingin ditengahkan */
+    margin: 0 auto 15px auto; /* Tengahkan gambar dan beri margin bawah */
+    border: 3px solid #eee; /* Sedikit border pada gambar */
+}
+
+.profile-section p {
+    font-size: 1.1em;
+    margin-bottom: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #D3D3D3;
+    margin-top: 30px; /* Jarak dari konten atas */
+    color: #555;
+}
+
+.footer-links a {
+    color: #000000;
+    text-decoration: none;
+    margin: 0 10px; /* Jarak antar link sosial media */
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
