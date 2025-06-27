@@ -1,5 +1,28 @@
 /* style.css */
+.sec2 {
+    position: relative;
+    display: inline-block;
+}
 
+.sec2 img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.sec3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
 /* Reset dasar */
 * {
     box-sizing: border-box;
