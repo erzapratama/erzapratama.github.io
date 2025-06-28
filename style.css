@@ -4,6 +4,40 @@
     display: inline-block;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+.learn-more{
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 12px 25px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    margin-top: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.learn-more: hover {
+    background-color: #0056b#;
+}
+
+.about-more {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    margin-top: 50px;
+    border-top: 1px solid #eee;
+}
+
+.about more .about {
+    max-width: 960px;
+    margin: 0;
+    text-align: left;
+}
+
 .img-pp img {
     display: block;
     max-width: 100%;
