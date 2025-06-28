@@ -1,16 +1,16 @@
 /* style.css */
-.sec2 {
+.img-pp {
     position: relative;
     display: inline-block;
 }
 
-.sec2 img {
+.img-pp img {
     display: block;
     max-width: 100%;
     height: auto;
 }
 
-.sec3 {
+.name-pp {
     position: absolute;
     top: 40%;
     left: 50%;
