@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Erza Pratama</title>
 
-  <!-- Google Fonts (misal pakai Poppins) -->
+  <!-- Google Fonts -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
 
   <!-- Import CSS Modular -->
@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="src/css/footer.css" />
   <link rel="stylesheet" href="src/css/hidden.css" />
   <link rel="stylesheet" href="src/css/responsive.css" />
+  <link rel="stylesheet" href="src/css/background.css" /> <!-- Tambahkan file ini -->
 </head>
 <body>
 
@@ -47,36 +48,42 @@
 
   <!-- Konten Tambahan -->
   <main id="extraContent" class="hidden">
-    <!-- About Section -->
+    
     <section class="about">
-      <h2>Welcome to My Personal Website</h2>
-      <p>My journey into the world of web development began at 19 in Purbalingga. Driven by curiosity and a passion for technology, I've been exploring everything from front-end UI to back-end systems. Every project is a step forward in growth and innovation.</p>
-    </section>
-
-    <!-- Portofolio Section -->
-    <section class="portofolio">
-      <h2>Portofolio</h2>
-      <p>This portfolio showcases various web development and UI/UX design projects, reflecting technical skill, creativity, and a strong user-focus.</p>
-    </section>
-
-    <!-- Project Section -->
-    <section class="project">
-      <h2>Project</h2>
-      <p>Here are my projects in web, data analysis, and machine learning — all aimed to solve real-world problems while strengthening my technical and collaboration skills.</p>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-      <div class="footer-links"> 
-        <a href="https://www.linkedin.com/in/erza-aditya-pratama-16001b322" target="_blank">LinkedIn</a> 
-        <a href="https://x.com/erzapratamaa3" target="_blank">Twitter</a>
-        <a href="https://www.instagram.com/erzapratamaaa_" target="_blank">Instagram</a>
+      <div class="section-container">
+        <h2>Welcome to My Personal Website</h2>
+        <p>My journey into the world of web development began at 19 in Purbalingga. Driven by curiosity and a passion for technology, I've been exploring everything from front-end UI to back-end systems. Every project is a step forward in growth and innovation.</p>
       </div>
-      <p>Created by Erza Aditya Pratama</p> 
+    </section>
+
+    <section class="portofolio">
+      <div class="section-container">
+        <h2>Portofolio</h2>
+        <p>This portfolio showcases various web development and UI/UX design projects, reflecting technical skill, creativity, and a strong user-focus.</p>
+      </div>
+    </section>
+
+    <section class="project">
+      <div class="section-container">
+        <h2>Project</h2>
+        <p>Here are my projects in web, data analysis, and machine learning — all aimed to solve real-world problems while strengthening my technical and collaboration skills.</p>
+      </div>
+    </section>
+
+    <footer>
+      <div class="section-container">
+        <div class="footer-links"> 
+          <a href="https://www.linkedin.com/in/erza-aditya-pratama-16001b322" target="_blank">LinkedIn</a> 
+          <a href="https://x.com/erzapratamaa3" target="_blank">Twitter</a>
+          <a href="https://www.instagram.com/erzapratamaaa_" target="_blank">Instagram</a>
+        </div>
+        <p>Created by Erza Aditya Pratama</p> 
+      </div>
     </footer>
+
   </main>
 
-  <!-- Script untuk tombol Read More -->
+  <!-- Script Read More -->
   <script>
     const readMoreBtn = document.getElementById('readMoreBtn');
     const extraContent = document.getElementById('extraContent');
