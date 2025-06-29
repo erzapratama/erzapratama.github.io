@@ -6,7 +6,7 @@
 }
 
 body, html {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Dejavu', sans-serif;
   height: 100%;
   overflow-x: hidden;
 }
@@ -88,7 +88,7 @@ header {
   overflow: hidden;
 }
 
-.img-pp {
+.images-pp {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -119,7 +119,7 @@ header {
 
 .button {
   background-color: #ffffff;
-  color: #000000;
+  color: grey;
   border: none;
   padding: 10px 20px;
   font-size: 1em;
@@ -129,7 +129,7 @@ header {
 }
 
 .button:hover {
-  background-color: #dddddd;
+  background-color: red;
 }
 
 /* Content Sections */
