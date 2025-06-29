@@ -19,3 +19,26 @@ body {
     linear-gradient(90deg, transparent 24%, rgba(0,0,0,0.02) 25%, transparent 26%);
   background-size: 50px 50px;
 }
+
+.section-container {
+  background: rgba(255, 255, 255, 0.8); /* semi-transparan putih */
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 16px;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 900px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.section-container {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform: translateY(20px);
+  opacity: 0;
+}
+
+.section-container.visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
