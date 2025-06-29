@@ -8,6 +8,7 @@
   justify-content: center;
 }
 
+/* Gambar latar belakang */
 .hero-bg {
   position: absolute;
   top: 0;
@@ -15,30 +16,39 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.9; /* tambahkan opacity untuk nuansa lembut */
+  opacity: 1; /* penuh, tanpa efek abu-abu */
+  z-index: 0; /* bukan -1! */
 }
 
+/* Konten di atas gambar */
 .hero-content {
-  position: relative; /* penting: agar di atas .hero-bg */
+  position: relative;
   z-index: 1;
   padding: 2rem;
   color: white;
   text-align: center;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.35); /* sedikit gelap agar teks terbaca */
   border-radius: 12px;
   max-width: 90%;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
 }
 
+/* Judul */
 .hero-content h1 {
   font-size: 2.5rem;
   margin-bottom: 10px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
 }
 
+/* Subjudul */
 .hero-content p {
   font-size: 1.2rem;
   margin-bottom: 20px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
 }
 
+/* Tombol */
 .hero-content button {
   padding: 10px 20px;
   font-size: 1rem;
