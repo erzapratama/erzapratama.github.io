@@ -3,10 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>erzapratama</title>
+  <title>Erza Pratama</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="top-nav">
+      <div class="logo">Erza</div>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portofolio.html">Portofolio</a></li>
+        <li><a href="project.html">Project</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <!-- Hero Section -->
   <section class="sec1">
@@ -20,55 +36,22 @@
     </div>
   </section>
 
-  <!-- Konten lainnya disembunyikan saat awal -->
+  <!-- Hidden content -->
   <div id="hiddenContent" style="display: none;">
-    
-    <header>
-      <h1>My Personal Website</h1>
-      <nav class="top-menu">
-        <ul class="nav-menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="portofolio.html">Portofolio</a></li>
-          <li><a href="project.html">Project</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+    <section class="about-more">
+      <h2>Welcome to My Personal Website</h2>
+      <p>My journey into the world of web development began at 19 in Purbalingga. Driven by curiosity and a passion for technology, I've been exploring everything from front-end UI to back-end systems. Every project is a step forward in growth and innovation.</p>
+    </section>
 
-    <main>
-      <section class="about-more">
-        <div class="about">
-          <h2>Welcome to My Personal Website</h2>
-          <p> My journey into the world of web development began at 19 in Purbalingga.
-            Driven by curiosity and a passion for technology, I've been diligently exploring the vast landscape of coding,
-            from crafting responsive user interfaces with HTML, CSS, and JavaScript to understanding the logic behind robust back-end systems.
-            Each project is a new adventure, a chance to learn and grow, pushing the boundaries of what I can create.
-            I'm excited to continue this path of endless learning and innovation.
-          </p>
-        </div>
-      </section>
+    <section class="portofolio">
+      <h2>Portofolio</h2>
+      <p>This portfolio showcases various web development and UI/UX design projects, reflecting technical skill, creativity, and a strong user-focus.</p>
+    </section>
 
-      <section class="portofolio">
-        <h2>Portofolio</h2>
-        <p>This portfolio showcases a diverse collection of projects demonstrating my expertise in web development, UI/UX design, and digital content creation. 
-          It highlights my proficiency in crafting responsive and user-centric digital experiences, ranging from interactive web applications to visually compelling design solutions. 
-          Each project presented here reflects a commitment to problem-solving, a keen eye for detail, and a dedication to delivering high-quality, impactful results. 
-          My work emphasizes a blend of technical skill with creative innovation, aiming to effectively communicate ideas and engage target audiences across various platforms.
-        </p>
-      </section>
-
-      <section class="project">
-        <h2>Project</h2>
-        <p>As a passionate and driven student in the field of Information Technology, I’ve actively pursued opportunities to apply my knowledge through various academic and personal projects.
-          These works span across areas such as web development, data analysis, machine learning, and software engineering. 
-          Each project represents not only a technical challenge but also a learning journey, where I’ve honed both my problem-solving abilities and collaborative skills. 
-          On this page, you’ll find a curated selection of my most meaningful projects, complete with brief overviews, key features, tools used, and the impact or outcomes achieved. 
-          Whether developed individually or in a team setting, these projects reflect my commitment to continuous improvement and innovation in technology.
-        </p>
-      </section>
-    </main>
+    <section class="project">
+      <h2>Project</h2>
+      <p>Here are my projects in web, data analysis, and machine learning — all aimed to solve real-world problems while strengthening my technical and collaboration skills.</p>
+    </section>
 
     <footer>
       <div class="footer-links"> 
@@ -80,14 +63,16 @@
     </footer>
   </div>
 
-  <!-- JavaScript tombol -->
+  <!-- Script -->
   <script>
-    const learnMoreBtn = document.querySelector('.button');
-    const hiddenContent = document.getElementById('hiddenContent');
+    function toggleMenu() {
+      const menu = document.getElementById('navMenu');
+      menu.classList.toggle('show');
+    }
 
-    learnMoreBtn.addEventListener('click', () => {
-      hiddenContent.style.display = 'block';
-      learnMoreBtn.style.display = 'none';
+    document.querySelector('.button').addEventListener('click', () => {
+      document.getElementById('hiddenContent').style.display = 'block';
+      document.querySelector('.button').style.display = 'none';
     });
   </script>
 
