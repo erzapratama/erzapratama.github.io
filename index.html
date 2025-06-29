@@ -11,8 +11,7 @@
   <!-- Navbar -->
   <header>
     <nav class="top-nav">
-      <div class="logo">Erza</div>
-      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <div class="logo">erzapratama</div>
       <ul class="nav-menu" id="navMenu">
         <li><a href="index.html">Home</a></li>
         <li><a href="blog.html">Blog</a></li>
@@ -26,18 +25,18 @@
 
   <!-- Hero Section -->
   <section class="sec1">
-    <img src="images/IMG-20240912-WA0022.jpg" alt="erzapratama.com" class="img-pp">
+    <img src="images/IMG-20240912-WA0022.jpg" alt="erzapratama.com" class="images-pp">
     <div class="container">
       <div class="name-pp">
         <h1>Hi, I'm Erza Aditya Pratama</h1>
         <p>This is my personal website</p>
-        <button class="button">Learn More</button>
+        <button class="button">Read More</button>
       </div>
     </div>
   </section>
 
   <!-- Hidden content -->
-  <div id="hiddenContent" style="display: none;">
+  <div id="hidden-content" style="display: none;">
     <section class="about-more">
       <h2>Welcome to My Personal Website</h2>
       <p>My journey into the world of web development began at 19 in Purbalingga. Driven by curiosity and a passion for technology, I've been exploring everything from front-end UI to back-end systems. Every project is a step forward in growth and innovation.</p>
@@ -63,18 +62,6 @@
     </footer>
   </div>
 
-  <!-- Script -->
-  <script>
-    function toggleMenu() {
-      const menu = document.getElementById('navMenu');
-      menu.classList.toggle('show');
-    }
-
-    document.querySelector('.button').addEventListener('click', () => {
-      document.getElementById('hiddenContent').style.display = 'block';
-      document.querySelector('.button').style.display = 'none';
-    });
-  </script>
 
 </body>
 </html>
