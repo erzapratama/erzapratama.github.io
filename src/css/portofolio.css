@@ -1,6 +1,9 @@
 .portofolio {
-  padding: 60px 20px;
-  background-color: #fff;
+  background: transparent;
+  color: #222;
+  padding: 3rem 2rem;
+  max-width: 800px;
+  margin: auto;
   text-align: center;
 }
 
