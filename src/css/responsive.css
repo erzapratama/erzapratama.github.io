@@ -1,15 +1,13 @@
 @media (max-width: 768px) {
   .hero-content h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
-  .nav-menu {
-    flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.9);
-    position: absolute;
-    top: 60px;
-    right: 30px;
-    padding: 10px;
-    display: none; /* Aktifkan JS jika ingin hamburger menu */
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .hero-content button {
+    font-size: 0.9rem;
   }
 }
