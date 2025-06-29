@@ -1,0 +1,14 @@
+.project {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.project h2 {
+  margin-bottom: 10px;
+}
+
+.project p {
+  max-width: 800px;
+  margin: 0 auto;
+}
