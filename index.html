@@ -12,7 +12,7 @@
   <header>
     <nav class="top-nav">
       <div class="logo">erzapratama</div>
-      <ul class="nav-menu" id="navMenu">
+      <ul class="nav-menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="about.html">About</a></li>
@@ -25,16 +25,16 @@
 
   <!-- Hero Section -->
   <section class="hero">
-    <img src="images/background.jpeg" alt="erzapratama.com" class="images-pp">
-    <div class="container">
-      <div class="name-pp">
-        <h1>Hi, I'm Erza Aditya Pratama</h1>
-        <p>This is my personal website</p>
-        <button class="button">Read More</button>
-      </div>
+    <img src="assets/img/background.jpeg" alt="erzapratama.com" class="hero-bg">
+    <div class="hero-content">
+      <h1>Hi, I'm Erza Aditya Pratama</h1>
+      <p>This is my personal website</p>
+      <button id="readMoreBtn">Read More</button>
     </div>
   </section>
-  
+
+  <!-- Konten Tambahan yang Awalnya Disembunyikan -->
+  <div id="extraContent" class="hidden">
     <section class="about">
       <h2>Welcome to My Personal Website</h2>
       <p>My journey into the world of web development began at 19 in Purbalingga. Driven by curiosity and a passion for technology, I've been exploring everything from front-end UI to back-end systems. Every project is a step forward in growth and innovation.</p>
@@ -60,6 +60,15 @@
     </footer>
   </div>
 
+  <script>
+    // Script untuk tombol Read More
+    const readMoreBtn = document.getElementById('readMoreBtn');
+    const extraContent = document.getElementById('extraContent');
 
+    readMoreBtn.addEventListener('click', () => {
+      extraContent.classList.remove('hidden');
+      readMoreBtn.style.display = 'none'; // Sembunyikan tombol setelah diklik
+    });
+  </script>
 </body>
 </html>
