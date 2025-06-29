@@ -1,12 +1,23 @@
 footer {
-  padding: 30px;
+  background: rgba(0, 0, 0, 0.6); /* transparan gelap, mirip navbar */
+  color: black;
+  padding: 20px 30px;
   text-align: center;
-  background-color: #222;
-  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-links {
+  margin-bottom: 10px;
 }
 
 .footer-links a {
-  color: #ffcc00;
-  margin: 0 10px;
+  color: black;
+  margin: 0 15px;
   text-decoration: none;
+  transition: color 0.3s ease;
+  font-weight: 500;
+}
+
+.footer-links a:hover {
+  color: #ffcc00; /* warna hover kuning, konsisten dengan navbar */
 }
