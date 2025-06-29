@@ -1,24 +1,24 @@
-/* Background dasar seluruh halaman */
 body {
+  background-image:
+    radial-gradient(circle, rgba(255, 255, 255, 0.15) 2px, transparent 2px),
+    linear-gradient(to bottom, #888 0%, #f5f5f5 100%);
+  background-size: 30px 30px, 100% 100%;
+  background-repeat: repeat, no-repeat;
+  background-attachment: fixed;
+  background-position: top center, top center;
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-
-  background-color: #888888; /* abu-abu lembut */
-  background-image:
-    radial-gradient(circle at 25% 25%, rgba(255, 255, 255, 0.06) 2%, transparent 0),
-    radial-gradient(circle at 75% 75%, rgba(255, 255, 255, 0.06) 2%, transparent 0);
-  background-size: 50px 50px;
 }
 
-/* Kontainer untuk section agar tidak langsung kena latar penuh */
+
 .section-container {
-  background: rgba(255, 255, 255, 0.88); /* semi putih transparan */
-  backdrop-filter: blur(6px); /* efek blur di latar belakang */
-  -webkit-backdrop-filter: blur(6px); /* untuk Safari */
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   border-radius: 16px;
   padding: 2rem;
   margin: 2rem auto;
   max-width: 900px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* bayangan halus */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
