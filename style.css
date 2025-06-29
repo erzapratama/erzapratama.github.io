@@ -2,26 +2,27 @@
 .img-pp {
     position: relative;
     display: inline-block;
+    max-width: 100%;
 }
 
 html {
     scroll-behavior: smooth;
 }
 
-.learn-more{
+.button{
     display: inline-block;
-    background-color: #007bff;
+    background-color: grey;
     color: white;
     padding: 1px 10px;
     text-decoration: none;
-    border-radius: 10px;
-    font-size: 0.6em;
-    margin-top: 25px;
-    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-top: 10px;
+    transition: background-color 0.1s ease;
 }
 
-.learn-more: hover {
-    background-color: #0056b#;
+.button:hover {
+    background-color: red;
 }
 
 .about-more {
@@ -38,20 +39,43 @@ html {
 }
 
 .name-pp {
+    max-width: 80%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 40px;
+    font-size: 1.2em;
     font-weight: bold;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px 20px;
+    padding: 20px 30px;
     border-radius: 10px;
-    white-space: nowrap;
-    width: max-content;
+    white-space: normal;
+    box-sizing: border-box;
+    line-height: 1.2;
 }
+
+.name-pp p {
+    font-size: 0.9em;
+    white-space: normal;
+    margin-top: 5px;
+}
+
+
+
+@media (max-width:480px) {
+    .name-pp {
+        font-size: 1em;
+        padding: 10px 15px;
+        max-width:95%;
+    }
+    .name-pp p {
+        font-size: 0.5em;
+        margin-top:5px;
+    }
+}
+
 /* Reset dasar */
 * {
     box-sizing: border-box;
@@ -72,7 +96,7 @@ header {
 }
 
 header h1 {
-    font-size: 2.5em; /* Ukuran font lebih besar */
+    font-size: auto; /* Ukuran font lebih besar */
     margin-bottom: 10px;
 }
 
@@ -84,14 +108,14 @@ nav {
 nav ul {
     list-style: none; /* Hilangkan bullet point */
     display: flex; /* Untuk membuat item navigasi sejajar */
-    justify-content: center; /* Tengahkan item navigasi */
-    gap: 20px; /* Jarak antar item navigasi */
+    justify-content: right; /* Tengahkan item navigasi */
+    gap: 10px; /* Jarak antar item navigasi */
 }
 
 nav a {
     color: #000000;
     text-decoration: none;
-    font-size: larger;
+    font-size: 0.85em;
     font-weight: bold; /* Lebih menonjol */
 }
 
