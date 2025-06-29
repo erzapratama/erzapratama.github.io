@@ -1,0 +1,14 @@
+.portofolio {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.portofolio h2 {
+  margin-bottom: 10px;
+}
+
+.portofolio p {
+  max-width: 800px;
+  margin: 0 auto;
+}
