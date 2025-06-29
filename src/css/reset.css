@@ -9,3 +9,13 @@ body, html {
   height: 100%;
   background: #f9f9f9;
 }
+
+body {
+  background-color: #f9f9f9; /* warna dasar abu muda */
+  background-image:
+    radial-gradient(circle at 25% 25%, rgba(0,0,0,0.03) 2%, transparent 0),
+    radial-gradient(circle at 75% 75%, rgba(0,0,0,0.03) 2%, transparent 0),
+    linear-gradient(0deg, transparent 24%, rgba(0,0,0,0.02) 25%, transparent 26%),
+    linear-gradient(90deg, transparent 24%, rgba(0,0,0,0.02) 25%, transparent 26%);
+  background-size: 50px 50px;
+}
