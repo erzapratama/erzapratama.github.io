@@ -1,203 +1,111 @@
-/* style.css */
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Segoe UI', sans-serif;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+/* Header (nanti bisa diubah tampilannya atau disembunyikan dulu) */
+header {
+  display: none;
+}
+
+/* Hero section */
+.sec1 {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
 .img-pp {
-    position: relative;
-    display: inline-block;
-    max-width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
 }
 
-html {
-    scroll-behavior: smooth;
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  text-align: center;
 }
 
-.button{
-    display: inline-block;
-    background-color: grey;
-    color: white;
-    padding: 1px 10px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1em;
-    margin-top: 10px;
-    transition: background-color 0.1s ease;
-}
-
-.button:hover {
-    background-color: red;
-}
-
-.about-more {
-    padding: 60px 20px;
-    background-color: #f9f9f9;
-    margin-top: 50px;
-    border-top: 1px solid #eee;
-}
-
-.img-pp img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
-.name-pp {
-    max-width: 80%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 1.2em;
-    font-weight: bold;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px 30px;
-    border-radius: 10px;
-    white-space: normal;
-    box-sizing: border-box;
-    line-height: 1.2;
+.name-pp h1 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
 }
 
 .name-pp p {
-    font-size: 0.9em;
-    white-space: normal;
-    margin-top: 5px;
+  font-size: 1.2em;
+  margin-bottom: 1em;
 }
 
-
-
-@media (max-width:480px) {
-    .name-pp {
-        font-size: 1em;
-        padding: 10px 15px;
-        max-width:95%;
-    }
-    .name-pp p {
-        font-size: 0.5em;
-        margin-top:5px;
-    }
+.button {
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-/* Reset dasar */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+.button:hover {
+  background-color: #dddddd;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
+/* Konten bawah */
+.about-more, .portofolio, .project {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.6;
 }
 
-header {
-    text-align: center;
-    padding: 20px;
-    background-color: #D3D3D3;
+.about-more h2, .portofolio h2, .project h2 {
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-header h1 {
-    font-size: auto; /* Ukuran font lebih besar */
-    margin-bottom: 10px;
-}
-
-nav {
-    padding: 10px;
-    background-color: #D3D3D3; /* Dipertahankan dari header */
-}
-
-nav ul {
-    list-style: none; /* Hilangkan bullet point */
-    display: flex; /* Untuk membuat item navigasi sejajar */
-    justify-content: right; /* Tengahkan item navigasi */
-    gap: 10px; /* Jarak antar item navigasi */
-}
-
-nav a {
-    color: #000000;
-    text-decoration: none;
-    font-size: 0.85em;
-    font-weight: bold; /* Lebih menonjol */
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-.container-main { /* Menggantikan .row dan .container lama */
-    max-width: 960px; /* Lebar maksimal konten */
-    margin: 20px auto; /* Tengahkan dan beri margin atas/bawah */
-    padding: 0 20px; /* Padding samping */
-    /* Menghapus display: flex; untuk membuat layout satu kolom */
-}
-
-.post-text-box {
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    margin-bottom: 30px; /* Beri jarak ke bagian About Me di bawahnya */
-}
-
-.post-text-box h2 { /* Newest Post */
-    font-size: 2em;
-    margin-bottom: 15px;
-    color: #333;
-}
-
-.post-text-box h3 { /* The Author */
-    font-size: 1.5em; /* Ukuran yang sesuai untuk sub-sub-judul */
-    margin-top: 25px;
-    margin-bottom: 10px;
-    color: #555;
-}
-
-/* Bagian About Me */
-.profile-section { /* Menggantikan .profile */
-    background-color: #f9f9f9;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    text-align: center; /* Tengahkan konten di dalam About Me */
-    margin-left: 50px; /* Ini yang membuat menjorok ke kanan! */
-    max-width: 300px; /* Batasi lebar About Me agar tidak terlalu lebar */
-}
-
-.profile-section h3 { /* About Me */
-    font-size: 1.8em;
-    margin-bottom: 15px;
-    color: #333;
-}
-
-.profile-section img {
-    width: 150px;
-    height: 150px; /* Pastikan tinggi sama dengan lebar untuk bulat sempurna */
-    border-radius: 50%; /* Membuat gambar bulat */
-    display: block; /* Agar margin auto bisa berfungsi jika ingin ditengahkan */
-    margin: 0 auto 15px auto; /* Tengahkan gambar dan beri margin bawah */
-    border: 3px solid #eee; /* Sedikit border pada gambar */
-}
-
-.profile-section p {
-    font-size: 1.1em;
-    margin-bottom: 0;
-}
-
+/* Footer */
 footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #D3D3D3;
-    margin-top: 30px; /* Jarak dari konten atas */
-    color: #555;
+  text-align: center;
+  padding: 20px;
+  background-color: #f1f1f1;
 }
 
 .footer-links a {
-    color: #000000;
-    text-decoration: none;
-    margin: 0 10px; /* Jarak antar link sosial media */
-    font-size: 1.1em;
-    font-weight: bold;
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
 }
 
 .footer-links a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .name-pp h1 {
+    font-size: 2em;
+  }
+
+  .button {
+    font-size: 0.9em;
+    padding: 8px 16px;
+  }
 }
