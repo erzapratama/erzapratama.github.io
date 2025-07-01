@@ -1,25 +1,20 @@
 body {
-  /* Fondasi Tipografi untuk seluruh halaman */
   font-family: 'Poppins', sans-serif;
-  color: #333; /* Warna teks default agar konsisten */
-  line-height: 1.6; /* Jarak antar baris agar teks mudah dibaca */
-  
-  /* Menghaluskan rendering font di beberapa browser */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-  /* Properti background yang sudah bagus */
-  background: 
-    /* Layer 1: Polkadot pattern */
-    radial-gradient(circle, rgba(255, 255, 255, 0.15) 2px, transparent 2px) 
-    top center / 30px 30px repeat,
-    /* Layer 2: Gradient utama */
-    linear-gradient(to bottom, #888 0%, #f5f5f5 100%) 
-    top center / 100% 100% no-repeat;
-  
-  background-attachment: fixed;
+  color: #333;
+  line-height: 1.6;
   margin: 0;
   padding: 0;
+  
+  /* Gradasi diagonal yang lembut dan modern */
+  background: 
+    /* Layer 1: Polkadot yang sangat halus */
+    radial-gradient(circle, rgba(255, 255, 255, 0.1) 1px, transparent 1px) 
+    top center / 25px 25px repeat,
+    /* Layer 2: Gradasi utama */
+    linear-gradient(to top right, #a8c0ff, #d7d2ff) 
+    top center / 100% 100% no-repeat;
+    
+  background-attachment: fixed;
 }
 
 .section-container {
