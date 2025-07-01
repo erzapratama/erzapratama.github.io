@@ -1,17 +1,28 @@
-.about {
-  background: transparent;
+/**
+ * SECTION: ABOUT
+ * Menggunakan ID selector (#about) agar sesuai dengan HTML
+ * dan memberikan kekhususan (specificity) yang lebih tinggi.
+ */
+#about {
+  /* Menggunakan flexbox untuk layout dan spacing yang lebih modern */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem; /* Jarak konsisten antara judul dan paragraf */
+
+  /* Properti lainnya */
   color: #222;
   padding: 3rem 2rem;
   max-width: 800px;
-  margin: auto;
+  margin-inline: auto; /* Lebih modern daripada 'margin: auto' untuk centering */
   text-align: center;
 }
 
-.about h2 {
-  margin-bottom: 10px;
-}
+/* Tidak perlu style khusus untuk h2 karena spacing diatur oleh 'gap' di #about */
 
-.about p {
-  max-width: 600px;
-  margin: 0 auto;
+/* Menggunakan child combinator (>) agar hanya menargetkan paragraf 
+   langsung di bawah #about */
+#about > p {
+  line-height: 1.6; /* Meningkatkan keterbacaan teks */
+  max-width: 60ch; /* Membatasi lebar berdasarkan karakter, lebih baik untuk keterbacaan */
 }
