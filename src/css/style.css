@@ -1,4 +1,10 @@
+/* style.css */
+
+/* 1. Reset/Normalisasi gaya browser */
 @import url('reset.css');
+
+/* 2. Gaya dasar atau komponen utama */
+@import url('background.css');
 @import url('navbar.css');
 @import url('hero.css');
 @import url('about.css');
@@ -6,5 +12,6 @@
 @import url('project.css');
 @import url('footer.css');
 @import url('hidden.css');
+
+/* 3. Gaya responsif SELALU DI AKHIR */
 @import url('responsive.css');
-@import url('background.css');
