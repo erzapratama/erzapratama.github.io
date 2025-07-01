@@ -12,6 +12,10 @@
   <header>
     <nav class="top-nav">
       <div class="logo">erzapratama</div>
+      
+     <!-- Toggle Button for Mobile -->
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      
       <ul class="nav-menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="nav/about.html">About</a></li>
@@ -78,5 +82,14 @@
       readMoreBtn.style.display = 'none';
     });
   </script>
+
+  <!-- Script Toggle Menu -->
+  <script>
+  function toggleMenu() {
+    const menu = document.querySelector('.nav-menu');
+    menu.classList.toggle('active');
+  }
+</script>
+
 </body>
 </html>
