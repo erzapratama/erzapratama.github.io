@@ -1,1 +1,17 @@
+.portofolio {
+  background: transparent;
+  color: #222;
+  padding: 3rem 2rem;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
 
+.portofolio h2 {
+  margin-bottom: 10px;
+}
+
+.portofolio p {
+  max-width: 800px;
+  margin: 0 auto;
+}
