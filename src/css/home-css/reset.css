@@ -1,1 +1,47 @@
+/* Reset dasar untuk semua elemen */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+/* Reset default font dan warna latar belakang */
+html, body {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  background: none;
+  color: #111;
+}
+
+/* Hapus list style default */
+ul, ol {
+  list-style: none;
+}
+
+/* Hapus underline dari semua link */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Buat gambar tidak keluar batas kontainer */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Tombol tanpa border dan outline default */
+button {
+  border: none;
+  outline: none;
+  background: none;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/* Tambahan dasar lain */
+h1, h2, h3, h4, h5, h6, p {
+  font-weight: normal;
+  line-height: 1.5;
+}
