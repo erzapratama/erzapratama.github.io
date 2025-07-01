@@ -1,13 +1,33 @@
 @media (max-width: 768px) {
+  .hero {
+    padding: 3rem 1.5rem;
+  }
+
   .hero-content h1 {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
   }
 
   .hero-content p {
-    font-size: 1rem;
+    font-size: 1.05rem;
   }
 
   .hero-content button {
-    font-size: 0.9rem;
+    padding: 10px 20px;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 1.3rem; /* dari 3rem -> lebih kecil di HP */
+  }
+
+  .hero-content p {
+    font-size: 0.8rem;
+  }
+
+  .hero-content button {
+    font-size: 0.8rem;
+    padding: 8px 10px;
   }
 }
