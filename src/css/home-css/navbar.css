@@ -32,3 +32,33 @@
 .nav-menu li a:hover {
   color: #ffcc00;
 }
+
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Responsive Style */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 60px;
+    right: 30px;
+    background: rgba(0, 0, 0, 0.85);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 15px 20px;
+    display: none; /* awalnya disembunyikan */
+    border-radius: 10px;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+}
